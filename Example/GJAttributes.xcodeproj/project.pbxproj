@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		27525B4DFF207C57F4543150 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		27525B4DFF207C57F4543150 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		2A50458F79C72507D49D2FFB /* Pods_GJAttributes_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GJAttributes_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B65AFEFCFE3DBB28CD0A536 /* Pods-GJAttributes_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GJAttributes_Tests.release.xcconfig"; path = "Target Support Files/Pods-GJAttributes_Tests/Pods-GJAttributes_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5FDE8B96220B82B3E2102E3D /* Pods-GJAttributes_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GJAttributes_Tests.debug.xcconfig"; path = "Target Support Files/Pods-GJAttributes_Tests/Pods-GJAttributes_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -62,11 +62,25 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		703678BD36460B6AAF669B9C /* Pods_GJAttributes_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GJAttributes_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7712E68262E180436FA35D50 /* GJAttributes.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = GJAttributes.podspec; path = ../GJAttributes.podspec; sourceTree = "<group>"; };
+		7712E68262E180436FA35D50 /* GJAttributes.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GJAttributes.podspec; path = ../GJAttributes.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B8BCD90CF39F3A5FD37E71F8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B8BCD90CF39F3A5FD37E71F8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C4797B846C86076A3ADA7B6E /* Pods-GJAttributes_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GJAttributes_Example.release.xcconfig"; path = "Target Support Files/Pods-GJAttributes_Example/Pods-GJAttributes_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E4E5C85D80A87BDFFE3F7EA2 /* Pods-GJAttributes_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GJAttributes_Example.debug.xcconfig"; path = "Target Support Files/Pods-GJAttributes_Example/Pods-GJAttributes_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E8C8424929C34F5B00C21E85 /* NSAttributedString+GJMake.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+GJMake.h"; sourceTree = "<group>"; };
+		E8C8424A29C34F5B00C21E85 /* NSAttributedString+GJMake.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+GJMake.m"; sourceTree = "<group>"; };
+		E8C8424B29C34FC600C21E85 /* GJAttributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GJAttributes.h; sourceTree = "<group>"; };
+		E8C8424C29C3508900C21E85 /* GJUIKitAttributesDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GJUIKitAttributesDefines.h; sourceTree = "<group>"; };
+		E8C8424D29C350DB00C21E85 /* GJUTAttributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GJUTAttributes.h; sourceTree = "<group>"; };
+		E8C8424E29C350DB00C21E85 /* GJUTAttributes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GJUTAttributes.m; sourceTree = "<group>"; };
+		E8C8425129C3515200C21E85 /* GJUTRangeHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GJUTRangeHandler.h; sourceTree = "<group>"; };
+		E8C8425229C3515200C21E85 /* GJUTRangeHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GJUTRangeHandler.m; sourceTree = "<group>"; };
+		E8C8425329C3518500C21E85 /* GJUTRecorder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GJUTRecorder.h; sourceTree = "<group>"; };
+		E8C8425429C3518500C21E85 /* GJUTRecorder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GJUTRecorder.m; sourceTree = "<group>"; };
+		E8C8425529C351BC00C21E85 /* GJUTRegexHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GJUTRegexHandler.h; sourceTree = "<group>"; };
+		E8C8425629C351BC00C21E85 /* GJUTRegexHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GJUTRegexHandler.m; sourceTree = "<group>"; };
+		E8C8425729C3528900C21E85 /* GJUIKitTextMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GJUIKitTextMaker.h; sourceTree = "<group>"; };
+		E8C8425829C3528900C21E85 /* GJUIKitTextMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GJUIKitTextMaker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +117,6 @@
 				5FDE8B96220B82B3E2102E3D /* Pods-GJAttributes_Tests.debug.xcconfig */,
 				2B65AFEFCFE3DBB28CD0A536 /* Pods-GJAttributes_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -191,6 +204,20 @@
 			isa = PBXGroup;
 			children = (
 				7712E68262E180436FA35D50 /* GJAttributes.podspec */,
+				E8C8424929C34F5B00C21E85 /* NSAttributedString+GJMake.h */,
+				E8C8424A29C34F5B00C21E85 /* NSAttributedString+GJMake.m */,
+				E8C8424B29C34FC600C21E85 /* GJAttributes.h */,
+				E8C8424C29C3508900C21E85 /* GJUIKitAttributesDefines.h */,
+				E8C8424D29C350DB00C21E85 /* GJUTAttributes.h */,
+				E8C8424E29C350DB00C21E85 /* GJUTAttributes.m */,
+				E8C8425729C3528900C21E85 /* GJUIKitTextMaker.h */,
+				E8C8425829C3528900C21E85 /* GJUIKitTextMaker.m */,
+				E8C8425129C3515200C21E85 /* GJUTRangeHandler.h */,
+				E8C8425229C3515200C21E85 /* GJUTRangeHandler.m */,
+				E8C8425329C3518500C21E85 /* GJUTRecorder.h */,
+				E8C8425429C3518500C21E85 /* GJUTRecorder.m */,
+				E8C8425529C351BC00C21E85 /* GJUTRegexHandler.h */,
+				E8C8425629C351BC00C21E85 /* GJUTRegexHandler.m */,
 				27525B4DFF207C57F4543150 /* README.md */,
 				B8BCD90CF39F3A5FD37E71F8 /* LICENSE */,
 			);
@@ -258,6 +285,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

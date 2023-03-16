@@ -1,0 +1,6 @@
+framework module GJAttributes {
+  umbrella header "GJAttributes-umbrella.h"
+
+  export *
+  module * { export * }
+}

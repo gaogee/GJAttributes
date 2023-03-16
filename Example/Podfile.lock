@@ -1,0 +1,16 @@
+PODS:
+  - GJAttributes (0.1.0)
+
+DEPENDENCIES:
+  - GJAttributes (from `../`)
+
+EXTERNAL SOURCES:
+  GJAttributes:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GJAttributes: 37ffaa2ab051f4aa730823e1e32607e71cab5a58
+
+PODFILE CHECKSUM: 1fd07eab12ac06053663def1d82944111b710daa
+
+COCOAPODS: 1.12.0
