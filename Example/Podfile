@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'GJAttributes_Example' do
+  pod 'GJAttributes', :path => '../'
+
+  target 'GJAttributes_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
