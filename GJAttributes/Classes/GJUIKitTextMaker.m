@@ -10,7 +10,6 @@
 #import "GJUTRegexHandler.h"
 #import "GJUTRangeHandler.h"
 
-NS_ASSUME_NONNULL_BEGIN
 inline static BOOL _rangeContains(NSRange main, NSRange sub) {
     return (main.location <= sub.location) && (main.location + main.length >= sub.location + sub.length);
 }
@@ -335,4 +334,4 @@ inline static NSRange _textRange(NSAttributedString *text) {
     return bounds;
 }
 @end
-NS_ASSUME_NONNULL_END
+

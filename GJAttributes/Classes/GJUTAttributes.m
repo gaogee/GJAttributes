@@ -8,7 +8,6 @@
 
 #import "GJUTAttributes.h"
 
-NS_ASSUME_NONNULL_BEGIN
 @implementation GJUTAttributes
 @synthesize recorder = _recorder;
 - (GJUTRecorder *)recorder {
@@ -48,10 +47,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (GJUTKernAttribute)kern {
     return ^id<GJUTAttributesProtocol>(CGFloat kern) {
-        ///
-        /// Thanks @donggelaile
-        /// https://github.com/changsanjiang/GJAttributes/issues/9
-        ///
         self.recorder->kern = @(kern);
         return self;
     };
@@ -133,4 +128,3 @@ NS_ASSUME_NONNULL_BEGIN
     };
 }
 @end
-NS_ASSUME_NONNULL_END

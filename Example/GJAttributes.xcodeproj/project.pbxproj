@@ -24,6 +24,12 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		E8C8426729C35C5800C21E85 /* GJUIKitTextMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C8425929C3567E00C21E85 /* GJUIKitTextMaker.m */; };
+		E8C8426829C35C5B00C21E85 /* GJUTAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C8425A29C3567E00C21E85 /* GJUTAttributes.m */; };
+		E8C8426929C35C5F00C21E85 /* GJUTRangeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C8426029C3567E00C21E85 /* GJUTRangeHandler.m */; };
+		E8C8426A29C35C6200C21E85 /* GJUTRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C8426129C3567F00C21E85 /* GJUTRecorder.m */; };
+		E8C8426B29C35C6500C21E85 /* GJUTRegexHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C8426229C3567F00C21E85 /* GJUTRegexHandler.m */; };
+		E8C8426C29C35C6900C21E85 /* NSAttributedString+GJMake.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C8425C29C3567E00C21E85 /* NSAttributedString+GJMake.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -392,8 +398,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8C8426B29C35C6500C21E85 /* GJUTRegexHandler.m in Sources */,
 				6003F59E195388D20070C39A /* GJAppDelegate.m in Sources */,
+				E8C8426829C35C5B00C21E85 /* GJUTAttributes.m in Sources */,
+				E8C8426A29C35C6200C21E85 /* GJUTRecorder.m in Sources */,
+				E8C8426729C35C5800C21E85 /* GJUIKitTextMaker.m in Sources */,
 				6003F5A7195388D20070C39A /* GJViewController.m in Sources */,
+				E8C8426929C35C5F00C21E85 /* GJUTRangeHandler.m in Sources */,
+				E8C8426C29C35C6900C21E85 /* NSAttributedString+GJMake.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,6 +537,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GJAttributes/GJAttributes-Prefix.pch";
 				INFOPLIST_FILE = "GJAttributes/GJAttributes-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -541,6 +554,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GJAttributes/GJAttributes-Prefix.pch";
 				INFOPLIST_FILE = "GJAttributes/GJAttributes-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

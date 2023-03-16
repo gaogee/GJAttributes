@@ -9,7 +9,6 @@
 #import "NSAttributedString+GJMake.h"
 #import "GJUIKitTextMaker.h"
 
-NS_ASSUME_NONNULL_BEGIN
 @implementation NSAttributedString (GJMake)
 + (instancetype)gj_UIKitText:(void(^)(id<GJUIKitTextMakerProtocol> make))block {
     GJUIKitTextMaker *maker = [GJUIKitTextMaker new];
@@ -41,4 +40,3 @@ static CGSize gj_textSize(NSAttributedString *attrStr, CGFloat width, CGFloat he
     return bounds.size;
 }
 @end
-NS_ASSUME_NONNULL_END

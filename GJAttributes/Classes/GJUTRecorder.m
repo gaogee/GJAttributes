@@ -8,7 +8,6 @@
 
 #import "GJUTRecorder.h"
 
-NS_ASSUME_NONNULL_BEGIN
 @implementation GJUTStroke
 @end
 @implementation GJUTDecoration
@@ -30,4 +29,3 @@ NS_ASSUME_NONNULL_BEGIN
     return self->style;
 }
 @end
-NS_ASSUME_NONNULL_END

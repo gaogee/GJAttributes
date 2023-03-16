@@ -9,7 +9,6 @@
 #import "GJUTRangeHandler.h"
 #import "GJUTAttributes.h"
 
-NS_ASSUME_NONNULL_BEGIN
 @implementation GJUTRangeHandler
 - (instancetype)initWithRange:(NSRange)range {
     self = [super init];
@@ -41,4 +40,3 @@ NS_ASSUME_NONNULL_BEGIN
 
 @implementation GJUTRangeRecorder
 @end
-NS_ASSUME_NONNULL_END

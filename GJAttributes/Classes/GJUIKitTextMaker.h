@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "GJUTAttributes.h"
 NS_ASSUME_NONNULL_BEGIN
 @interface GJUIKitTextMaker : GJUTAttributes<GJUIKitTextMakerProtocol>
 - (NSMutableAttributedString *)install;

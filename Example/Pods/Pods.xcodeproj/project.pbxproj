@@ -37,18 +37,18 @@
 
 /* Begin PBXFileReference section */
 		076DD3A02BA49795C13341C01090D4E8 /* Pods-GJAttributes_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GJAttributes_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		099B99A037F5100AD885E5D1B3A5A2A4 /* Pods-GJAttributes_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GJAttributes_Example"; path = Pods_GJAttributes_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		099B99A037F5100AD885E5D1B3A5A2A4 /* Pods_GJAttributes_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GJAttributes_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		125E785A3B5679F2851C5FC8F1AEDFC6 /* Pods-GJAttributes_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GJAttributes_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1906C1E4164493D85EFE408527C7144E /* Pods-GJAttributes_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GJAttributes_Tests.modulemap"; sourceTree = "<group>"; };
 		1DDE2B0510B271AEC3FE9C5D07EFF5DB /* GJAttributes-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GJAttributes-dummy.m"; sourceTree = "<group>"; };
-		2143E6055C3C2B87B3AC325ED11D3905 /* GJAttributes */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GJAttributes; path = GJAttributes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2143E6055C3C2B87B3AC325ED11D3905 /* GJAttributes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GJAttributes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		358A7EB7AC3207738F5743E88025AA2D /* Pods-GJAttributes_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GJAttributes_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		46F1E797963043E37FAB67704F514EC0 /* GJAttributes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GJAttributes.debug.xcconfig; sourceTree = "<group>"; };
 		4A274BBCC71F08306A5F22D501572135 /* Pods-GJAttributes_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GJAttributes_Example-Info.plist"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7BD237CA0851F6DC8BA3CEABDD5BE459 /* Pods-GJAttributes_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GJAttributes_Example.modulemap"; sourceTree = "<group>"; };
 		83AC864D3D4592D14D855CA0D54CC047 /* Pods-GJAttributes_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GJAttributes_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8CC79BB7CB07EE9FDEBD677E4BE8F50C /* Pods-GJAttributes_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GJAttributes_Tests"; path = Pods_GJAttributes_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CC79BB7CB07EE9FDEBD677E4BE8F50C /* Pods_GJAttributes_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GJAttributes_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E258FB370D3CBC5F9308B527B24B4B0 /* Pods-GJAttributes_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GJAttributes_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9C58F7794DCFBBA90C585B1AE2C59C3A /* GJAttributes-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GJAttributes-prefix.pch"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -132,9 +132,9 @@
 		A2490503F73907712C61D8F05501FD33 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2143E6055C3C2B87B3AC325ED11D3905 /* GJAttributes */,
-				099B99A037F5100AD885E5D1B3A5A2A4 /* Pods-GJAttributes_Example */,
-				8CC79BB7CB07EE9FDEBD677E4BE8F50C /* Pods-GJAttributes_Tests */,
+				2143E6055C3C2B87B3AC325ED11D3905 /* GJAttributes.framework */,
+				099B99A037F5100AD885E5D1B3A5A2A4 /* Pods_GJAttributes_Example.framework */,
+				8CC79BB7CB07EE9FDEBD677E4BE8F50C /* Pods_GJAttributes_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -266,7 +266,7 @@
 			);
 			name = "Pods-GJAttributes_Tests";
 			productName = Pods_GJAttributes_Tests;
-			productReference = 8CC79BB7CB07EE9FDEBD677E4BE8F50C /* Pods-GJAttributes_Tests */;
+			productReference = 8CC79BB7CB07EE9FDEBD677E4BE8F50C /* Pods_GJAttributes_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		3F0B72F8DA032B0309E96F11063493B7 /* Pods-GJAttributes_Example */ = {
@@ -285,7 +285,7 @@
 			);
 			name = "Pods-GJAttributes_Example";
 			productName = Pods_GJAttributes_Example;
-			productReference = 099B99A037F5100AD885E5D1B3A5A2A4 /* Pods-GJAttributes_Example */;
+			productReference = 099B99A037F5100AD885E5D1B3A5A2A4 /* Pods_GJAttributes_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		80DD331D528ABF720ACD51AE9888EB93 /* GJAttributes */ = {
@@ -303,7 +303,7 @@
 			);
 			name = GJAttributes;
 			productName = GJAttributes;
-			productReference = 2143E6055C3C2B87B3AC325ED11D3905 /* GJAttributes */;
+			productReference = 2143E6055C3C2B87B3AC325ED11D3905 /* GJAttributes.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -418,7 +418,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-GJAttributes_Tests/Pods-GJAttributes_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GJAttributes_Tests/Pods-GJAttributes_Tests.modulemap";
@@ -452,7 +452,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-GJAttributes_Example/Pods-GJAttributes_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GJAttributes_Example/Pods-GJAttributes_Example.modulemap";
@@ -486,7 +486,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/GJAttributes/GJAttributes-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/GJAttributes/GJAttributes-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/GJAttributes/GJAttributes.modulemap";
 				PRODUCT_MODULE_NAME = GJAttributes;
@@ -517,7 +517,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/GJAttributes/GJAttributes-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/GJAttributes/GJAttributes-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/GJAttributes/GJAttributes.modulemap";
 				PRODUCT_MODULE_NAME = GJAttributes;
@@ -583,7 +583,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -610,7 +610,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-GJAttributes_Tests/Pods-GJAttributes_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GJAttributes_Tests/Pods-GJAttributes_Tests.modulemap";
@@ -680,7 +680,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -709,7 +709,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-GJAttributes_Example/Pods-GJAttributes_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GJAttributes_Example/Pods-GJAttributes_Example.modulemap";

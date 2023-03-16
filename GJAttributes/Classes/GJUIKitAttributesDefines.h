@@ -18,7 +18,6 @@
             GJUTDecoration,
             GJUTImageAttachment;
 
-NS_ASSUME_NONNULL_BEGIN
 @protocol GJUIKitTextMakerProtocol <GJUTAttributesProtocol>
 /**
  * - Append a `string` to the text.
@@ -35,9 +34,9 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * \endcode
  */
-@property (nonatomic, copy, readonly) id<GJUTAttributesProtocol>(^append)(NSString *str);
+@property (nonatomic, copy, readonly) id<GJUTAttributesProtocol>_Nullable(^ _Nullable append)(NSString * _Nullable str);
 
-typedef void(^GJUTAppendImageHandler)(id<GJUTImageAttachment> make);
+typedef void(^GJUTAppendImageHandler)(id<GJUTImageAttachment> _Nullable make);
 /**
  * - Append an `image attachment` to the text.
  *
@@ -58,7 +57,7 @@ typedef void(^GJUTAppendImageHandler)(id<GJUTImageAttachment> make);
  *
  * \endcode
  */
-@property (nonatomic, copy, readonly) id<GJUTAttributesProtocol>(^appendImage)(GJUTAppendImageHandler block);
+@property (nonatomic, copy, readonly) id<GJUTAttributesProtocol>_Nullable(^ _Nullable appendImage)(GJUTAppendImageHandler _Nullable block);
 
 /**
  * - Append a `subtext` to the text.
@@ -72,7 +71,7 @@ typedef void(^GJUTAppendImageHandler)(id<GJUTImageAttachment> make);
  *
  * \endcode
  */
-@property (nonatomic, copy, readonly) id<GJUTAttributesProtocol>(^appendText)(NSAttributedString *subtext);
+@property (nonatomic, copy, readonly) id<GJUTAttributesProtocol>_Nullable(^ _Nullable appendText)(NSAttributedString * _Nullable subtext);
 
 /**
  * - Update the attributes for the specified range of `text`.
@@ -84,7 +83,7 @@ typedef void(^GJUTAppendImageHandler)(id<GJUTImageAttachment> make);
  *   }];
  * \endcode
  */
-@property (nonatomic, copy, readonly) id<GJUTAttributesProtocol>(^update)(NSRange range);
+@property (nonatomic, copy, readonly) id<GJUTAttributesProtocol>_Nullable(^ _Nullable update)(NSRange range);
 
 /**
  * - Use regular to process `text`.
@@ -113,7 +112,7 @@ typedef void(^GJUTAppendImageHandler)(id<GJUTImageAttachment> make);
  *   }];
  * \endcode
  */
-@property (nonatomic, copy, readonly) id<GJUTRegexHandlerProtocol>(^regex)(NSString *regularExpression);
+@property (nonatomic, copy, readonly) id<GJUTRegexHandlerProtocol>_Nullable(^ _Nullable regex)(NSString * _Nullable regularExpression);
 
 /**
  * - Edit the subtext for the specified range of `text`.
@@ -136,48 +135,48 @@ typedef void(^GJUTAppendImageHandler)(id<GJUTImageAttachment> make);
  *   }];
  * \endcode
  */
-@property (nonatomic, copy, readonly) id<GJUTRangeHandlerProtocol>(^range)(NSRange range);
+@property (nonatomic, copy, readonly) id<GJUTRangeHandlerProtocol>_Nullable(^ _Nullable range)(NSRange range);
 @end
 
-typedef id<GJUTAttributesProtocol>_Nonnull(^GJUTFontAttribute)(UIFont *font);
-typedef id<GJUTAttributesProtocol>_Nonnull(^GJUTColorAttribute)(UIColor *color);
+typedef id<GJUTAttributesProtocol>_Nonnull(^GJUTFontAttribute)(UIFont * _Nullable font);
+typedef id<GJUTAttributesProtocol>_Nonnull(^GJUTColorAttribute)(UIColor * _Nullable color);
 typedef id<GJUTAttributesProtocol>_Nonnull(^GJUTAlignmentAttribute)(NSTextAlignment alignment);
 typedef id<GJUTAttributesProtocol>_Nonnull(^GJUTLineSpacingAttribute)(CGFloat lineSpacing);
 typedef id<GJUTAttributesProtocol>_Nonnull(^GJUTKernAttribute)(CGFloat kern);
-typedef id<GJUTAttributesProtocol>_Nonnull(^GJUTShadowAttribute)(void(^)(NSShadow *make));
-typedef id<GJUTAttributesProtocol>_Nonnull(^GJUTStrokeAttribute)(void(^block)(id<GJUTStroke> make));
-typedef id<GJUTAttributesProtocol>_Nonnull(^GJUTParagraphStyleAttribute)(void(^block)(NSMutableParagraphStyle *make));
+typedef id<GJUTAttributesProtocol>_Nonnull(^GJUTShadowAttribute)(void(^_Nullable)(NSShadow * _Nullable make));
+typedef id<GJUTAttributesProtocol>_Nonnull(^GJUTStrokeAttribute)(void(^ _Nullable block)(id<GJUTStroke> _Nullable make));
+typedef id<GJUTAttributesProtocol>_Nonnull(^GJUTParagraphStyleAttribute)(void(^ _Nullable block)(NSMutableParagraphStyle * _Nullable make));
 typedef id<GJUTAttributesProtocol>_Nonnull(^GJUTLineBreakModeAttribute)(NSLineBreakMode lineBreakMode);
-typedef id<GJUTAttributesProtocol>_Nonnull(^GJUTDecorationAttribute)(void(^)(id<GJUTDecoration> make));
+typedef id<GJUTAttributesProtocol>_Nonnull(^GJUTDecorationAttribute)(void(^_Nullable)(id<GJUTDecoration> _Nullable make));
 typedef id<GJUTAttributesProtocol>_Nonnull(^GJUTBaseLineOffsetAttribute)(double offset);
 
 @protocol GJUTAttributesProtocol
-@property (nonatomic, copy, readonly) GJUTFontAttribute font;
-@property (nonatomic, copy, readonly) GJUTColorAttribute textColor;
-@property (nonatomic, copy, readonly) GJUTColorAttribute backgroundColor;
-@property (nonatomic, copy, readonly) GJUTAlignmentAttribute alignment;
-@property (nonatomic, copy, readonly) GJUTLineSpacingAttribute lineSpacing;
-@property (nonatomic, copy, readonly) GJUTKernAttribute kern;
-@property (nonatomic, copy, readonly) GJUTShadowAttribute shadow;
-@property (nonatomic, copy, readonly) GJUTStrokeAttribute stroke;
-@property (nonatomic, copy, readonly) GJUTParagraphStyleAttribute paragraphStyle;
-@property (nonatomic, copy, readonly) GJUTLineBreakModeAttribute lineBreakMode;
-@property (nonatomic, copy, readonly) GJUTDecorationAttribute underLine;
-@property (nonatomic, copy, readonly) GJUTDecorationAttribute strikethrough;
-@property (nonatomic, copy, readonly) GJUTBaseLineOffsetAttribute baseLineOffset;
+@property (nonatomic, copy, readonly) GJUTFontAttribute _Nullable font;
+@property (nonatomic, copy, readonly) GJUTColorAttribute _Nullable textColor;
+@property (nonatomic, copy, readonly) GJUTColorAttribute _Nullable backgroundColor;
+@property (nonatomic, copy, readonly) GJUTAlignmentAttribute _Nullable alignment;
+@property (nonatomic, copy, readonly) GJUTLineSpacingAttribute _Nullable lineSpacing;
+@property (nonatomic, copy, readonly) GJUTKernAttribute _Nullable kern;
+@property (nonatomic, copy, readonly) GJUTShadowAttribute _Nullable shadow;
+@property (nonatomic, copy, readonly) GJUTStrokeAttribute _Nullable stroke;
+@property (nonatomic, copy, readonly) GJUTParagraphStyleAttribute _Nullable paragraphStyle;
+@property (nonatomic, copy, readonly) GJUTLineBreakModeAttribute _Nullable lineBreakMode;
+@property (nonatomic, copy, readonly) GJUTDecorationAttribute _Nullable underLine;
+@property (nonatomic, copy, readonly) GJUTDecorationAttribute _Nullable strikethrough;
+@property (nonatomic, copy, readonly) GJUTBaseLineOffsetAttribute _Nullable baseLineOffset;
 @end
 
 @protocol GJUTRangeHandlerProtocol
-@property (nonatomic, copy, readonly) void(^update)(void(^)(id<GJUTAttributesProtocol> make));
-@property (nonatomic, copy, readonly) void(^replaceWithText)(void(^)(id<GJUIKitTextMakerProtocol> make));
-@property (nonatomic, copy, readonly) id<GJUTAttributesProtocol>(^replaceWithString)(NSString *string);
+@property (nonatomic, copy, readonly) void(^ _Nullable update)(void(^_Nullable)(id<GJUTAttributesProtocol> _Nullable make));
+@property (nonatomic, copy, readonly) void(^ _Nullable replaceWithText)(void(^_Nullable)(id<GJUIKitTextMakerProtocol> _Nullable make));
+@property (nonatomic, copy, readonly) id<GJUTAttributesProtocol>_Nullable(^ _Nullable replaceWithString)(NSString * _Nullable string);
 @end
 
 @protocol GJUTRegexHandlerProtocol <GJUTRangeHandlerProtocol>
-@property (nonatomic, copy, readonly) void(^handler)(void(^)(NSMutableAttributedString *attrStr, NSTextCheckingResult *result));
+@property (nonatomic, copy, readonly) void(^ _Nullable handler)(void(^_Nullable)(NSMutableAttributedString * _Nullable attrStr, NSTextCheckingResult * _Nullable result));
 
-@property (nonatomic, copy, readonly) id<GJUTRegexHandlerProtocol>(^regularExpressionOptions)(NSRegularExpressionOptions ops);
-@property (nonatomic, copy, readonly) id<GJUTRegexHandlerProtocol>(^matchingOptions)(NSMatchingOptions ops);
+@property (nonatomic, copy, readonly) id<GJUTRegexHandlerProtocol>_Nullable(^ _Nullable regularExpressionOptions)(NSRegularExpressionOptions ops);
+@property (nonatomic, copy, readonly) id<GJUTRegexHandlerProtocol>_Nullable(^ _Nullable matchingOptions)(NSMatchingOptions ops);
 @end
 
 @protocol GJUTStroke
